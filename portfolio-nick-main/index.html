@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <div data-aos="fade-right" data-aos-duration="500" offset="-50">
+                    <a href="#">Ver Portafolios</a>
+                </div>
+
+                <div class="submenu">
+                    <ul>
+                        
+                        <li><a href="#" id="Facundo" onclick="Julio()">Julio</a></li>
+                        <li><a href="#" id="Facundo" onclick="facu()">Facundo</a></li>
+                        <li><a href="#" id="Facundo" onclick="Drazen()">Drazen</a></li>
+                        <li><a href="#" id="Facundo" onclick="Juan()">Juan</a></li>
+                        <li><a href="#" id="Facundo" onclick="Bruno()">Bruno</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav id="nav">
+                <ul>
+
+                    <li>
+                        <div data-aos="fade-right" data-aos-duration="500" offset="-50"><a href="#inicio"
+                                onclick="seleccionar()">INICIO</a>
+                    </li>
+                    <li>
+                        <div data-aos="fade-right" data-aos-duration="500" offset="-50"><a href="#sobremi"
+                                onclick="seleccionar()">SOBRE MI</a>
+                    </li>
+                    <li>
+                        <div data-aos="fade-right" data-aos-duration="500" offset="-50"><a href="#curriculum"
+                                onclick="seleccionar()">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <div data-aos="fade-right" data-aos-duration="500" offset="-50"><a href="#portfolio"
+                                onclick="seleccionar()">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <div data-aos="fade-right" data-aos-duration="500" offset="-50"><a href="#contacto"
+                                onclick="seleccionar()">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO --><br><br>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img" data-aos="zoom-in" data-aos-duration="500">
+                <img src="img/name.png" alt="" id="perfil">
+            </div>
+            <h1 id="nombre" data-aos="fade-right" data-aos-duration="500" offset="-50">TU Nombre</h1>
+            <h2 id="cargo" data-aos="fade-right" data-aos-duration="500" offset="-50">Tu tiulo</h2>
+            <div class="redes">
+                <a href="#" id="red3" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="200"
+                    data-aos-offset="0"><i class="fa-brands fa-github"></i></a>
+                <a href="#" id="red2" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="100"
+                    data-aos-offset="0"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" id="red1" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="0"
+                    data-aos-offset="0"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2 data-aos="fade-right" data-aos-duration="500" offset="-50">Sobre Mí</h2>
+            <p id="sobremip" data-aos="fade-right" data-aos-duration="500" offset="-50"> Descripcion tuya</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3 data-aos="fade-right" data-aos-duration="500" offset="-50">Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong data-aos="fade-right" data-aos-duration="500" offset="-50">Cumpleaños</strong>
+                            <i id="cumpleaños">dd-mm-yyyy</i>
+                        </li>
+                        <li>
+                            <strong data-aos="fade-right" data-aos-duration="500" offset="-50">Teléfono</strong>
+                            <i id="telefono">000 12345678</i>
+                        </li>
+                        <li>
+                            <strong data-aos="fade-right" data-aos-duration="500" offset="-50">Email</strong>
+                            <i id="email">cw@example.com</i>
+                        </li>
+                        <li>
+                            <strong data-aos="fade-right" data-aos-duration="500" offset="-50">Dirección</strong>
+                            <i id="direccion">Distrito, Calle</i>
+                        </li>
+                        <li>
+                            <strong data-aos="fade-right" data-aos-duration="500" offset="-50">Cargo</strong>
+                            <span id="rol">Tu Cargo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="0">
+                            <i class="fa-solid fa-th" id="act1"></i>
+                            <span id="ac1">Interés A</span>
+                        </div>
+                        <div class="interes" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="500">
+                            <i class="fa-solid fa-th" id="act2"></i>
+                            <span id="ac2">Interés B</span>
+                        </div>
+                        <div class="interes" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="1000">
+                            <i class="fa-solid fa-th" id="act3"></i>
+                            <span id="ac3">Interés C</span>
+                        </div>
+                        <div class="interes" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="1500">
+                            <i class="fa-solid fa-th" id="act4"></i>
+                            <span id="ac4">Interés D</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="100">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4 id="esc1">Area</h4>
+                        <span class="casa" id="nom1">Nombre del instituto</span>
+                        <span class="fecha" id="time">2005 - 2008</span>
+                        <p id="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat,
+                            tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque
+                            soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="0">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4 id="tr1">Front Developer</h4>
+                        <span class="casa" id="nom2">Nombre de Compañía</span>
+                        <span class="fecha" id="time2">2005 - 2008</span>
+                        <p id="info2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat,
+                            tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque
+                            soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2 data-aos="fade-right" data-aos-duration="500" offset="-50">PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" data-aos="fade-right" data-aos-duration="500" offset="-50">
+                    <img src="img/p1.jpg" alt="" id="port1">
+                    <div class="overlay">
+                        <h3 id="portnom1">Diseño Creativo</h3>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-right" data-aos-duration="500" offset="-50">
+                    <img src="img/p2.jpg" alt="" id="port2">
+                    <div class="overlay">
+                        <h3 id="portnom2">Diseño Creativo</h3>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-right" data-aos-duration="500" offset="-50">
+                    <img src="img/p3.jpg" alt="" id="port3">
+                    <div class="overlay">
+                        <h3 id="portnom3">Diseño Creativo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2 data-aos="fade-right" data-aos-duration="500" offset="-50">CONTACTO</h2>
+            <form action="https://formsubmit.co/tuwa1fu012@gmail.com" method="POST">
+
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#"
+                            data-aos="fade-right" data-aos-duration="500" offset="-50">
+                        <input type="hidden" name="_captcha" value="false" data-aos="fade-right"
+                            data-aos-duration="500">
+                        <input type="text" placeholder="Tú Nombre" name="nombre" data-aos="fade-right"
+                            data-aos-duration="500">
+                        <input type="email" placeholder="Dirección de correo" name="correo" data-aos="fade-right"
+                            data-aos-duration="500">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" name="mensaje"
+                            data-aos="fade-right" data-aos-duration="500" offset="-100"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="col" data-aos="fade-right" data-aos-duration="500" offset="-50">
+                        <img src="img/ubicacion.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span id="direccion1">Distrito, Calle</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <span id="telefono1">+(00) - 000 0000-0000</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span id="email1">cw@example.com</span>
+                                </li>
+                            
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#" id="red3" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="200"
+                data-aos-offset="0"><i class="fa-brands fa-github"></i></a>
+            <a href="#" id="red2" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="100"
+                data-aos-offset="0"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" id="red1" data-aos="fade-right" data-aos-duration="500" offset="-50" data-aos-delay="0"
+                data-aos-offset="0"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script src="biblioteca.js"></script>
+</body>
+
+</html>
